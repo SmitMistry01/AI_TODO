@@ -2,9 +2,13 @@
   "name": "ai_todo",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "studio": "drizzle-kit studio"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +23,11 @@
     "tsx": "^4.20.5"
   },
   "dependencies": {
+    "@google/genai": "^1.15.0",
+    "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.2.1",
-    "pg": "^8.16.3"
+    "openai": "^5.15.0",
+    "pg": "^8.16.3",
+    "readline-sync": "^1.4.10"
   }
 }
